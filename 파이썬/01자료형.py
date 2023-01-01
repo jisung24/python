@@ -23,6 +23,8 @@ print("안녕! 내 이름은 \'김지성\'이야!")
 # - 불(대문자로 작성해줘야 함.)
 print(type(True))  # bool
 print(type(False))  # bool
+
+
 # - 변수
 # - 리스트
 # - 튜플
