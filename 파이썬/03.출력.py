@@ -50,3 +50,11 @@ print("+를 이용한 변수출력 >> " + d)
 e = "seoul"
 f = "jeju"
 print(f"e >> {e}, f >> {f}")
+
+# 여러 줄 출력하기
+print("""
+dsdsdsd
+sdsdsds
+sdsdsds
+dsd 
+""")
