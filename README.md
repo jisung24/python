@@ -10,7 +10,7 @@
 
 - ### 2023-01-02
 
-  - input함수(`입력받는 함수`)
+  - ONE : input함수(`입력받는 함수`)
 
     - `return값이 str type이야!`
     - `입력받는 값에 따라서 type change해줘야 해!`
@@ -18,44 +18,49 @@
     - `split(문자열을 배열로 바꿔줌)`
     - 어차피 input의 `return값이 str type`이어서 `split사용 가능함`
 
-  - print함수(`출력하는 함수`)
+  - TWO : print함수(`출력하는 함수`)
 
     - `구분자 바꿔주기`
-      - sep("구분자")
+    - sep("구분자")
     - `끝 문자 바꿔주기`
-      - end(" ") `\n이 default값`
+    - end(" ") `\n이 default값`
     - `여러 줄 바꿔서 출력하기`
+
       ```python
       print("""
-        dsdsdsd
-        sdsdsds
-        sdsdsds
-        dsd
-        """)
+          dsdsdsdrtt
+          sdsdsdszzd
+          sdsdsdsggg
+          dsdsfdsfds
+          fgfhfhfhfh
+          """)
       ```
+
     - `❗️변수 포함해서 출력하는 방법❗️`
 
-      - `1. 콤마, +로 나타내기`
-        ```python
-            age = 10
-            print("내 나이는 >> ",age)
-            print("내 나이는 >> " + age)
-        ```
-      - `2. format사용하기 + {}`
+    - `1. 콤마, +로 나타내기`
+      ```python
+      age = 10
+      print("내 나이는 >> ",age)
+      print("내 나이는 >> " + age)
+      ```
+    - `2. format사용하기 + {}`
 
-        - 변수가 2개 이상이면 순서대로!
+    - 변수가 2개 이상이면 순서대로!
 
-        ```python
-            age = 10
-            print("내 나이는 {}살".format(age))
+      ```python
+      age = 10
+      print("내 나이는 {}살".format(age))
 
-            name = "jisung"
-            print("나이 > {}, 이름 > {}".format(age, name))
-        ```
+      name = "jisung"
+      print("나이 > {}, 이름 > {}".format(age, name))
+      ```
 
-      - `3.f + {} 사용하기!! => 보통 이거 교수님말씀..`
-        ```python
-        age = 10
-        hello = "hi"
-        print(f"age >> {age}, hello >> {hello}")
-        ```
+    - `3.f + {} 사용하기!! => 보통 이거 교수님말씀..`
+      ```python
+      age = 10
+      hello = "hi"
+      print(f"age >> {age}, hello >> {hello}")
+      ```
+
+  - THREE : 제어문(if, switch, for, while, do-while)
