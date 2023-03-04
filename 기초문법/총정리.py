@@ -38,6 +38,18 @@ for i in range(10,0,-1): # 10에서 1까지
 for i in range(20, 0, -2):
     print(i)
 
+# 쉽게 독해하는 법 : 숫자를 먼저 읽고 어떤 수 들 인지 한 번에 머릿속에 그린다. 
+# 그리고 i가 하나씩 차지한다. 
+# 왜냐면 range는 그냥 숫자를 1 3 4 5 짠 하고 띄워주는 함수야. 
+# 그걸 list로 받으면 [1, 3, 4, 5]가 되는거구...!! 
+
+li = [1,3,4,5]
+answer = []
+for i in range(0, len(li)):
+    if li[i] > 3:
+        answer.append( li[i] )
+
+print(" ".join(str(s) for s in answer))
 
 
 ## ⭐️ 리스트의 연산 ⭐️
@@ -83,3 +95,14 @@ print(arr5)
 lists = [2,4,6,7,8]
 del lists[2:4] # 2 3번 요소 삭제
 print(lists) # [2, 4, 8]
+
+
+
+# 파이썬 map 
+# 맵객체를 반환하기 떄문에 반드시 리스트로 형 변환을 해줘야 한다.
+arr = [1,2,3,4,5,6]
+def incOne(x):
+    return x + 1
+
+lists = list(map(incOne, arr))  # [2, 3, 4, 5, 6, 7]
+print(lists)
