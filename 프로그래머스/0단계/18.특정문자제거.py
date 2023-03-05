@@ -47,3 +47,5 @@ arr = [i * 3 for i in str]
 print(''.join(arr))
 
 # 배열을 그냥 이어주기..! 
+
+# 깃 
