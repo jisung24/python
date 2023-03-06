@@ -32,7 +32,7 @@ for i in range(8): # 8번 입력받음...!
         elif M > stack2[len(stack2) - 1]:
             # M이 나올 때 까지... 계속 stack2에 넣어준다...! 
             stack2.append(stack1.pop()) 
-            if(stack2[len(stack2) - 1] == M):
+            if stack2[len(stack2) - 1] == M:
                 answer.append(stack2.pop())
                 break
 
