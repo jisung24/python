@@ -15,8 +15,8 @@ result = list()
 
 
 # 누적합 : itertools 
-sum = itertools.accumulate([1,2,3,4,5])
-print(list(sum)) # [1, 3, 6, 10, 15]
+# sum = itertools.accumulate([1,2,3,4,5])
+# print(list(sum)) # [1, 3, 6, 10, 15]
 
 # arr = ["A", "B", "C"]
 # result = list(permutations(arr, 2)) # len(arr)에서 2개 즉, 3p2
@@ -57,3 +57,19 @@ print(list(sum)) # [1, 3, 6, 10, 15]
 # result = list(combinations_with_replacement(nums, 2))
 # print(f"result >> {result}")
 
+from itertools import combinations # 조합 사용! => 순서가 바껴도 상관없이 1개로 치부
+
+# print(f"answer >> {answer}")
+## 풀어버림..! 
+
+# 삼총사 => 바로 5분만에 풀어버림.. => 조합 문제인데, 거기서 조건 걸어주면 끝..! 
+
+arr = [2,1,3,4,1]
+result = list(combinations(arr, 2)) # 조합 순열은 중복이 안 돼! => 중복 포함이면 중복조합, 중복순열 쓰면 돼;..! 
+sum_arr = []
+for i in result:
+    sum_arr.append(sum(i))
+
+setArr = set(sum_arr)
+print(sorted(setArr))
+# print-(result)

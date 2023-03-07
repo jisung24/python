@@ -212,3 +212,5 @@ arr = [3,1,2,4,6,3,2,1]
 newArr = sorted(arr, reverse=True)
 print(newArr) # arr을 내림차순 정렬! 
 inc_sort = sorted(arr, reverse=False) # 오름차순, reverse를 사용하지 않으면 자동 오름차순으로 정렬이 된다. 
+
+
