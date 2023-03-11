@@ -22,18 +22,3 @@ print(answer)
 
 
 
-
-# heap = [] # 빈 배열..
-# # 최대 힙 구현! 
-
-# # 1 3 5 7 
-# # -1 -3 -5 -7 을 넣고 그냥 최소힙으로 출력한다음 -해줌
-# for i in range(4):
-#     number = int(input()) # 숫자를 하나 입력을 받음..! 
-#     heapq.heappush(heap, number * -1)
-
-# print(heap)
-
-# print((heapq.heappop(heap)) * -1)
-
-# print(heap)

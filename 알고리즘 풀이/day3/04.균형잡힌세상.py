@@ -12,7 +12,8 @@ def checkBrackets(bracket):
         if i == "(" or i == "[":
             # 만약 여는 괄호 아니면 닫는 괄호가 나오면
             stack.append(i) # 값을 넣어준다 
-        elif i == ")":
+        elif i == ")": # "("
+            # error! 
             if not stack or stack[-1] != "(": # [ 이 괄호가 들어잇을 수 있어.
                 return "no"
             else:
@@ -38,6 +39,7 @@ answer = ''
 
 while True:
     # 처음도 역시 공백이 올 수 있어! 
+    #  . => 
     # 근데 처음 공백은 제거하면 안 되는게
     #  .도 입력을 계속 받게 해줘야 돼
     bracket = input() # 인자를 전달하지 않으면 그냥 공백을 제거한다.
@@ -47,7 +49,7 @@ while True:
 
     if bracket == '.':
         break
-    else:
+    else: # 마침표가 아닌 다른 게 오면
         answer += checkBrackets(bracket) + '\n'
 
 print(answer)
