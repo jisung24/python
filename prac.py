@@ -1,13 +1,7 @@
-# 1에서 5가 될 때 까지...! 
+number = [1,2,3,4,5,6]
+hash = {}
+for i in number:
+    if not i in hash:
+        hash[i] = True
 
-i = 1
-
-while i <= 5:
-    print(i)
-    i += 1
-
-
-print(i,"는 5를 넘어섰습니다! ") # 즉 while문 밖에다가 써 준다면, 이는 조건을 불충분 시켰다는 뜻..! 
-# 충분을 시켰으면 반복문 안에서 return해주면 아래 까지 내려 올 일이 없다. 
-
-# tip : 아래까지 내려 올 일이 없게하자...1 
+print(hash)
