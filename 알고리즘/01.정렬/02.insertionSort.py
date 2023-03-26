@@ -4,10 +4,16 @@
 # 2번째 값 부터 끝 까지 하나씩 step마다 선택해서 
 # 그 선택한 값을 정렬한다. 
 
-arr = [8,5,6,2,4] 
-
+arr = [8,5,6,2,4]
+print(f"시작 >> {arr}")
 for i in range(1, len(arr)):
-    # 맨 앞 부터 그 i까지...
-    for j in range(0, i):
-        # j 0부터 i-1까지 arr[i]와 비교...! 
-        if 
+    for j in reversed(range(0, i)):
+        if arr[i] < arr[j]:
+            arr[i],arr[j] = arr[j],arr[i]
+
+        else: break
+
+print(arr)
+
+
+# 실패! 
