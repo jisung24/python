@@ -24,3 +24,7 @@ for i in data1:
 # 9 8 7 출력 
 for i in reversed(data1[2]): # 배열을 거꾸로...! 
     print(i)
+
+
+# 파이썬 기초문법 쭉 적기! 
+# 프로그래머스 1단계 부터 풀기

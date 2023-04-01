@@ -25,7 +25,6 @@ for i in range(N):
     else:
         print(-1)
         exit(0)
-
     
 
 # 초심 잃지 말기!! 
