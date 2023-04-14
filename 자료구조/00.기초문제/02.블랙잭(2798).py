@@ -1,17 +1,16 @@
-cards, num = list(map(int, input().split()))
-arr = list(map(int, input().split()))
+# 조합 사용! 
+from itertools import combinations
+N, M = list(map(int, input().split(' ')))
+cards = list(map(int, input().split(' ')))
 
-# 1. 완전 탐색으로 풀기 
-result = 0
-for i in range(0, len(arr)):
-    for j in range(i + 1, len(arr)):
-        for k in range(j + 1, len(arr)):
-            sum_value = arr[i] + arr[j] + arr[k]
-            if sum_value <= num:
-                result = max(result, sum_value)
-                # 둘 중 큰 값이 들어간다...! 
+combine_result = list(combinations(cards, 3)) # 5 C 3 
 
-print(result)
+answer = []
+
+for i in range(0, len(combine_result)):
+    total = sum(combine_result[i])
+    if total <= M:
+        answer.append(total)
 
 
-# 21보다 작거나 같은 수 전부 filter해서 정렬 후 가장 
+print(answer[-1])

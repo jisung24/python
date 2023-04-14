@@ -1,39 +1,28 @@
-# 오름차순인 지 아닌 지! 
-# 1. 오름차순인지 만 확인한다. 
-# -1) 오름차순일 경우 count가 풀로찬다. 
-# -2) 내림차순 일 경우, count == 0
-# -3) mixed일 경우 풀 0 둘 다 아닌 다른 자연수
+# 입력 받기
 
-arr = list(map(int, input().split()))
-count = 0
-for i in range(1, len(arr)): # 0부터 arr의 길이 -1 까지.. 
-    if(arr[i - 1] <= arr[i]):
-        count += 1
-    
-if count == len(arr) - 1:
+# 1부터 8까지 나온다면 ascending 
+# 계속 낮아진다면 
+# 그게 아니라면 
+
+
+# 쭉 탐색을 해서 이거인지 아닌 지 결과를 내는 방법 
+# 처음에 A라고 설정을 하고 변화를 설정해준다. 
+asc = True 
+des = True 
+
+data = list(map(int, input().split(' '))) # list로 담아준다! 
+
+for i in range(1, 8):
+    # index 0번부터! 
+    if(data[i - 1] < data[i]):
+        des = False
+    elif(data[i - 1] > data[i]):
+        asc = False
+
+if(asc):
+    # 오름차순이 참일 경우! 
     print("ascending")
-elif count != 0:
-    print("mixed")
-else:
+elif(des): # 내림차순이 참일경우
     print("descending")
-
-
-# 나동빈 풀이 
-# 오름차순 True 
-# 내림차순 True 
-# 둘 다 False로 바뀌면 mixed ...! 
-
-# inc = True
-# dec = True
-# for i in range(1, len(arr)):
-#     if(arr[i - 1] < arr[i]):
-#         dec = False
-#     elif(arr[i - 1] > arr[i]):
-#         inc = False
-
-# if(dec == True):
-#     print("descending")
-# elif(inc == True):
-#     print("incending")
-# else:
-#     print("mixed")
+else: # 둘 다 아닐 경우 => Mixed! 
+    print("mixed")
