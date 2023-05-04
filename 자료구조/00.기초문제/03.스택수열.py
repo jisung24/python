@@ -25,3 +25,9 @@ for i in range(0, n):
 
 print('\n'.join(answer))
 
+
+a = 10
+if a < 10:
+    print("O")
+else:
+    print("x")
